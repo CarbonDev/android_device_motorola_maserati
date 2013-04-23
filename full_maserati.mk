@@ -37,7 +37,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/maserati/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_maserati
+PRODUCT_NAME := carbon_maserati
 PRODUCT_DEVICE := maserati
 PRODUCT_BRAND := verizon
 PRODUCT_MANUFACTURER := Motorola

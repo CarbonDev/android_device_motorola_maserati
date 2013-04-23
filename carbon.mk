@@ -1,16 +1,16 @@
 # Inherit device configuration for VZW Droid 4.
 $(call inherit-product, device/motorola/maserati/full_maserati.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common Carbon stuff.
+$(call inherit-product, vendor/carbon/config/common_phone.mk)
 
 # Inherit some common CDMA stuff.
-$(call inherit-product, vendor/cm/config/cdma.mk)
+$(call inherit-product, vendor/carbon/config/common_cdma.mk)
 
 #
 # Setup device specific product configuration.
 #
-PRODUCT_NAME := cm_maserati
+PRODUCT_NAME := carbon_maserati
 PRODUCT_BRAND := verizon
 PRODUCT_DEVICE := maserati
 PRODUCT_DEVICE_PREFIX := cdma
@@ -18,10 +18,6 @@ PRODUCT_MODEL := XT894
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := Droid4
 PRODUCT_SFX := vzw
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 960
-TARGET_SCREEN_WIDTH := 540
 
 UTC_DATE := $(shell date +%s)
 DATE := $(shell date +%Y%m%d)
